@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  video_id: MyString
+  room: one
+
+two:
+  title: MyString
+  video_id: MyString
+  room: two

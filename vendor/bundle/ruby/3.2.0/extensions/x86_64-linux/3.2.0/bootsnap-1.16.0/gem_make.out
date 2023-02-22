@@ -1,0 +1,18 @@
+current directory: /home/vitorsouza/testes/farmstream/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+/home/vitorsouza/.rvm/rubies/ruby-3.2.1/bin/ruby -I /home/vitorsouza/.rvm/rubies/ruby-3.2.1/lib/ruby/3.2.0 extconf.rb
+creating Makefile
+
+current directory: /home/vitorsouza/testes/farmstream/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230220-19771-qo73rs sitelibdir\=./.gem.20230220-19771-qo73rs clean
+
+current directory: /home/vitorsouza/testes/farmstream/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230220-19771-qo73rs sitelibdir\=./.gem.20230220-19771-qo73rs
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /home/vitorsouza/testes/farmstream/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230220-19771-qo73rs sitelibdir\=./.gem.20230220-19771-qo73rs install
+/usr/bin/install -m 0755 bootsnap.so ./.gem.20230220-19771-qo73rs/bootsnap
+
+current directory: /home/vitorsouza/testes/farmstream/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230220-19771-qo73rs sitelibdir\=./.gem.20230220-19771-qo73rs clean

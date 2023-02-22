@@ -1,0 +1,27 @@
+
+<%= form_with(model: [@room, @room.videos.build], local: true, url: room_videos_by_access_key_path(@room.access_key)) do |form| %>
+  <%= form.text_field :video_id, placeholder: "Insira o ID do vídeo do YouTube" %>
+  <%= form.submit "Adicionar" %>
+<% end %>
+
+<%= render @room %>
+<div>
+  <p>Copie e compartilhe o link da sala:</p>
+  <%= text_field_tag :share_url, url_for(action: 'show', access_key: @room.access_key, only_path: false), readonly: true, size: 50 %>
+</div>
+
+<%if @videos.present?%>
+  <% @videos.each do |video| %>
+    <%if video.id.present?%>
+      <%= YouTubeAddy.youtube_embed_url("http://www.youtube.com/watch?v=#{video.video_id}").html_safe %>
+      <h2><%= video.title %></h2>
+    <% end %>
+  <% end %>
+<% end %>
+
+<div>
+  <%= link_to "Edit this room", edit_room_path(@room) %> |
+  <%= link_to "Back to rooms", rooms_path %>
+
+  <%= button_to "Destroy this room", @room, method: :delete %>
+</div>

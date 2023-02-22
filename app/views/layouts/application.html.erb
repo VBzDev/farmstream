@@ -8,8 +8,15 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-  </head>
 
+    <%# Materialize %>
+    <%= stylesheet_link_tag 'materialize.min.css' %>
+    <%= javascript_include_tag 'materialize.min.js' %>  
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <%# Axios %>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
   <body>
     <%= yield %>
   </body>
